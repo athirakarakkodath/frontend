@@ -1,0 +1,52 @@
+<div class="parent">
+<h1>Welcome {{user}}</h1>
+<div>
+    <a routerLink="/transaction">View Transaction History</a>
+</div>
+    <div class="child1">
+        <!-- <div class="col-4"></div> -->
+        <div class="  " id="mainDiv">
+            <h2 class=" text-center ">Deposit</h2>
+            <form action="" class="border border-dark  p-5" id="form_tag">
+
+                <input type="text" [(ngModel)]="acno" placeholder="AccountNumber" class="form-control mt-2" id="depo_acno"
+                    name="depoacno">
+                <input type="password" [(ngModel)]="pswd" placeholder="Password" class="form-control mt-2"
+                    id="depo_pswd" name="depopas">
+
+                <input type="text" [(ngModel)]="amount" placeholder="Amount" class="mt-2 form-control "
+                    id="depo_amount" name="depoam">
+
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-warning mt-4 form-control " (click)="deposit()">Deposit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="child2">
+
+
+        <div class=" " id="mainDiv1">
+            <h2 class=" text-center">Withdraw</h2>
+            <form action="" class="border border-dark  p-5" id="form_tag1">
+
+                <input type="text" [(ngModel)]="acno1" placeholder="AccountNumber" class="form-control mt-2"
+                    id="with_acno" name="regname">
+                <input type="password" [(ngModel)]="pswd1" placeholder="Password please" class="form-control mt-2"
+                    id="with_pswwd" name="regacno">
+
+                <input type="text" [(ngModel)]="amount1" placeholder="amount" class="mt-2 form-control "
+                    id="with_amount" name="regpas">
+
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-warning mt-4 form-control "
+                        (click)="withdraw()">withdraw</button>
+                </div>
+            </form>
+        </div>
+
+
+</div>
+</div>

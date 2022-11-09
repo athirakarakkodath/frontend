@@ -8,3 +8,22 @@ b.property binding -[attribute_name]= "property"
 2.view to component(html to ts)
 a.event binding-(event _name) = "function name()"
 a.event binding using $event-(event _name) = "function name($event)"
+c.event binding using template referencing variable-#variable_name
+
+  
+2.Two way binding
+
+
+
+Angular binding
+
+
+
+
+
+angular services
+to hold redundant datang g s servise name
+
+
+
+

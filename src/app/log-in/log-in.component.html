@@ -1,6 +1,6 @@
 <div class="navBar">
     <nav class="navbar ">
-        <div class="container-fluid">
+        <div class="container-fluid ">
           <span >Nordea Bank</span>
           <!-- string interpolation -->
           <h3 style="color:black">{{aim}}</h3>
@@ -16,13 +16,13 @@
                 <form action="" class="border border-dark bg-light p-5">
                     <!-- property binding - syntax--- []="" -->
                     <!--event binding using $event  -->
-                    <input type="text" [placeholder]="accno" (change)="get_acno($event)"   class="form-control mt-2" id="log_acno">
-                    <input type="password" placeholder="Password"  (change)="get_psw($event)"   class="mt-2 form-control " id="log_psw">
+                    <input type="text"  [(ngModel)]="acno" [placeholder]="accno" name="acno" class="form-control mt-2" id="log_acno">
+                    <input type="password" [(ngModel)]="pswd" placeholder="Password"  name="pswd"   class="mt-2 form-control " id="log_psw">
                     <div class="d-grid gap-2">
                         <!-- event binding(click)="function" -->
                         <button type="button" (click)="logIn()"  class="btn btn-primary mt-4 form-control ">Log In</button>
                     </div>
-                    <div><p>Not a user?<a href="">Register</a> </p> </div>
+                    <div><p>Not a user?<a routerLink ="register">Register</a> </p> </div>
 
                 </form>
             </div>

@@ -1,0 +1,25 @@
+.child1 {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-top: 90px;
+    margin-left: 200px;
+ 
+}
+
+.child2 {
+    width: 30%;
+    height: auto;
+    float: right;
+    margin-top: 90px;
+    margin-right: 100px;
+
+
+
+}
+h2{
+    color :white;
+    background-color:rgb(109, 128, 162);
+    border: 1px  solid black
+    
+}

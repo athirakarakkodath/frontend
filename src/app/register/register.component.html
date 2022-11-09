@@ -1,0 +1,41 @@
+<div class="navBar">
+    <nav class="navbar">
+        <div class="container-fluid">
+            <span>Nordea Bank</span>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 m-2 p-5" id="mainDiv">
+            <h2 class="mt-4 mb-4 text-center">Register</h2>
+            <form [formGroup]="registerForm" class="border border-dark bg-light p-5" id="form_tag">
+
+                <input type="text" formControlName="uname" placeholder="Username" name="uname" class="form-control mt-2"
+                    id="reg_name">
+
+                <div *ngIf="this.registerForm.get('uname')?.errors && this.registerForm.get('uname')?.touched"
+                    style="color:red">Invalid Username</div>
+
+                <input type="text" formControlName="acno" placeholder="Account Number" name="acn"
+                    class="form-control mt-2" id="reg_acno">
+                <div *ngIf="this.registerForm.get('acno')?.errors && this.registerForm.get('acno')?.touched"
+                    style="color:red">Invalid Account Number</div>
+
+                <input type="password" formControlName="pswd" placeholder="Password" name="psw"
+                    class="mt-2 form-control " id="reg_pass">
+                <div *ngIf="this.registerForm.get('pswd')?.errors && this.registerForm.get('pswd')?.touched"
+                    style="color:red">Invalid Password</div>
+
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-primary mt-4 form-control "
+                        (click)="register()">Register</button>
+                </div>
+            </form>
+            <div> <a href="#">Forgot Password</a> or <a routerLink="" class="text-center"> Sign up</a>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
